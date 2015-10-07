@@ -1,6 +1,6 @@
 ﻿namespace HelloWorld
 {
-    partial class Form1
+    partial class frmHelloWorld
     {
         /// <summary>
         /// Required designer variable.
@@ -28,12 +28,35 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.lblHelloWorld = new System.Windows.Forms.Label();
+            this.SuspendLayout();
+            // 
+            // lblHelloWorld
+            // 
+            this.lblHelloWorld.AutoSize = true;
+            this.lblHelloWorld.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHelloWorld.Location = new System.Drawing.Point(53, 42);
+            this.lblHelloWorld.Name = "lblHelloWorld";
+            this.lblHelloWorld.Size = new System.Drawing.Size(169, 31);
+            this.lblHelloWorld.TabIndex = 0;
+            this.lblHelloWorld.Text = "Hello, World!";
+            // 
+            // frmHelloWorld
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Text = "Form1";
+            this.ClientSize = new System.Drawing.Size(284, 125);
+            this.Controls.Add(this.lblHelloWorld);
+            this.Name = "frmHelloWorld";
+            this.Text = "Hello World!";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Label lblHelloWorld;
     }
 }
 
